@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier Prime", monospace;
+  background-color: #f7f7f7;
+}
+header {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  
+  margin: 0;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color:green;
+  border-right: 3px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing{
+  0%{ width: 0ch} /*Text is hidden*/
+  10%{ width: 17ch;} /*The enitre header will be typed out*/
+  20%{ width: 32ch;} /*Text stays visible*/
+  100%{ width: 32ch;} /*Text stays hidden*/
+}

@@ -23,6 +23,32 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
 }
+h2 {
+font-size: 15px;
+text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color:green;
+  border-right: 3px solid #000;
+  animation: cursor1 1s infinite step-end, typing1 15s infinite steps(17);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor1{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing1{
+  0%{ width: 0ch} /*Text is hidden*/
+  9%{ width: 10ch;} /*The enitre header will be typed out*/
+  17%{ width: 19ch;} /*Text stays visible*/
+  100%{ width: 19ch;} /*Text stays hidden*/
+}
+
 @keyframes cursor{
   0%, 100%{border-color: transparent;}
   50%{border-color: #000;}
@@ -33,4 +59,54 @@ header h1 {
   10%{ width: 17ch;} /*The enitre header will be typed out*/
   20%{ width: 32ch;} /*Text stays visible*/
   100%{ width: 32ch;} /*Text stays hidden*/
+}
+.w3-sidebar {
+  position: fixed;
+  width: 200px;
+  height: 150px;
+  background: rgb(79, 180, 79);
+  margin: 10px;
+}
+.w3-button{
+  position: fixed;
+  margin: 10px;
+}
+content {
+  background: #ddd;
+  margin-left: 50px;
+}
+
+.caution {
+  
+	display: block;
+  position: relative;
+  width: 0; 
+	height: 0; 
+  border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 22px solid black;
+}
+.caution:before {
+	position: absolute;
+  content: "!";
+  z-index: 2;
+  top: 9px;
+  left: -2px;
+  margin-top: -5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  
+}
+.caution:after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 0; 
+	height: 0; 
+  left: -11px;
+  top: 3px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 18px solid yellow;
 }

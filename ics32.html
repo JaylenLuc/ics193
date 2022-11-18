@@ -5,12 +5,11 @@
     <link rel="stylesheet" href="ics32.css">
 </head>
 <body>
-    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button class="w3-button" onclick="w3_open()">☰ Table Of Contents</button>
+    <div class="w3-sidebar" style="display:none" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-        <h3 class="w3-bar-item">Table of Contents</h3>
         <li>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#links" class="w3-bar-item w3-button">Online Resources</a>
         </li>
         <li>
         <a href="#" class="w3-bar-item w3-button">Link 2</a>
@@ -23,6 +22,59 @@
     <header>
         <h1>ICS31.get_Resources_and_Advice()</h1>
     </header>
+    <h2>Bjarne Stroustrup, most notable for the invention and development of the C++ programming language, posited<br>
+       “there are only two kinds of languages: 
+      the ones people complain about and the ones nobody uses.”</h2>
+    <p style="text-align:center">
+      <header>
+        <a id="links"><h3>ICS31.online_help()</h3></a>
+      </header>
+      <p style="text-align:center">
+      <img src="https://content.presspage.com/uploads/2658/c800_logo-stackoverflow-square.jpg?98978" alt="stackoverflow"
+      width="150" 
+      height="150">
+      <br>
+    <a href = "https://stackoverflow.com">Stack Overflow</a>
+    </p>
+      <h2>You will eventually use this whether or not we have it linked here. Not a single computer science <br>
+        student/software engineer goes their career not using this website. When looking for solutions to errors, <br>
+        this website is usually the first link to the solution. There are extremly intelligent professionals and<br>
+      ameutuers alike that dedicate their time to answers questions here. Use this to your advantage. </h2>
+      <p style="text-align:center">
+      <img src="https://yt3.ggpht.com/dW6to0x5Crmeh7yi-YPLcQRqVrBtx2BSh8eoKTJbE8NbjloQ0sqlmdszIlxokJU_97-ndOt_=s900-c-k-c0x00ffffff-no-rj"
+      width="150" 
+      height="150">
+      <br>
+      <a href = "https://www.w3schools.com/">w3 schools</a>
+      <h2>The go-to website for looking at examples for a multitude of Python topics. Useful if you are trying to <br>
+        understand how something works at the functional level. There are code sandboxes where you can test <br>
+        and experiment with code as well as test code snippets that are already given to you as an aid to understanding.<br>
+      w3 schools is great for understanding implementation of python standard library functions and classes because the <br>
+    sire is generally more engaging than others, allowing you to run and test code. </h2>
+      </p>
+      <p style="text-align:center">
+        <img src="https://www.python.org/static/img/python-logo@2x.png" 
+        width="250" 
+        height="150">
+        <br>
+        <a href = "https://docs.python.org/3/library/index.html">Offical python documentation</a>
+        <h2>If you want to get a more rigoruous and comprehensive detail into a specific function or concept in <br>
+          Python, the official documentation is the place to go.  </h2>
+        </p>
+    </p>
+    <div class="caution"></div>
+    <p style="text-align:center">
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
+        height="150">
+        <br>
+        <a href = "https://www.geeksforgeeks.org/">Geeks for Geeks</a>
+        <h2>Geeks for Geeks is a programming platform and computer science portal that provides an educational<br>
+        platform for learning about algorithms and data structures, common coding concepts and solution patterns, and, of couse, the <br>
+        the answers to your python questions.</h2>
+        </p>
+
+
+
     <script>
         function w3_open() {
           document.getElementById("mySidebar").style.display = "block";

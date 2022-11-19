@@ -15,8 +15,9 @@ h1 {
   animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
-  position:relative;
-  left: 35%;
+  
+  margin-left: auto;
+  margin-right: auto;
  
 }
 h2 {
@@ -32,8 +33,8 @@ h3 {
   animation: cursor1 1s infinite step-end, typing1 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
-  position: relative;
-  left: 40%;
+   margin-left: auto;
+  margin-right: auto;
 }
 div {
   background-color: lightgrey;
@@ -44,10 +45,23 @@ div {
   margin: auto;
   text-align: left;
 }
+
+p.indent {
+  text-indent: 30px;
+}
 div.a {
   background-color: lightgrey;
   width: 280px;
   height: 25px;
+  border: 15px solid lightgreen;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+}
+div.b {
+  background-color: lightgrey;
+  width: 280px;
+  height: 120px;
   border: 15px solid lightgreen;
   padding: 50px;
   margin: auto;
@@ -61,8 +75,9 @@ h4 {
   animation: cursor2 1s infinite step-end, typing2 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
-  position:relative;
-  left: 40%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 @keyframes cursor2{
   0%, 100%{border-color: transparent;}

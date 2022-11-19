@@ -6,21 +6,22 @@
 </head>
 <body>
     <button class="w3-button" onclick="w3_open()">☰ Table Of Contents</button>
-    <div class="w3-sidebar" style="display:none" id="mySidebar">
+    <div1 class="w3-sidebar" style="display:none" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
         <li>
         <a href="#links" class="w3-bar-item w3-button">Online Resources</a>
         </li>
         <li>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#errors" class="w3-bar-item w3-button">Common Errors</a>
         </li>
         <li>
         <a href="#" class="w3-bar-item w3-button">Link 3</a>
         </li>
-      </div>
+      </div1>
       
     <header>
         <h1>ICS31.get_Resources_and_Advice()</h1>
+        <br><br>
     </header>
     <h2>Bjarne Stroustrup, most notable for the invention and development of the C++ programming language, posited<br>
        “there are only two kinds of languages: 
@@ -62,7 +63,6 @@
           Python, the official documentation is the place to go.  </h2>
         </p>
     </p>
-    <div class="caution"></div>
     <p style="text-align:center">
         <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
         height="150">
@@ -70,7 +70,51 @@
         <a href = "https://www.geeksforgeeks.org/">Geeks for Geeks</a>
         <h2>Geeks for Geeks is a programming platform and computer science portal that provides an educational<br>
         platform for learning about algorithms and data structures, common coding concepts and solution patterns, and, of couse, the <br>
-        the answers to your python questions.</h2>
+        the answers to your python questions.<br><br>
+        CAUTION: geeks for geeks is generally good for introductory concepts but when learning more <br>
+        advanced topics such as data structures and algorithms, it is generally a hit or miss.<br></h2>
+        <br>
+        <br>
+        <header>
+          <a id="errors"><h4>ICS31.common_errors()</h4></a>
+        </header>
+
+        <p style="text-align:center"><div>“SyntaxError: Unexpected EOF While Parsing”</div></p>
+       <br> 
+        <h2>EOF stands for "end of file". It typically means that the Python interpreter has reached the end<br>
+        of the program without completely executing all the code.<br>
+        <br>
+        Here are some common causes:
+        <br>
+          <li>
+          fail to define a statement or expressions for our while/for loops
+          <br>
+          <br>
+          <div class="a">
+          i = 1<br>
+          while i < 11:
+            </div>
+          <br>
+          </li>
+          <li>
+            omit closing curley braces or brackets in our code
+            <br>
+            <br>
+  
+            <div class="a">
+              student = {
+                "name": "John",
+                &emsp;"level": "400",
+                &emsp;"faculty": "Engineering and Technology"
+              </div>
+              <br>
+          </li>
+          <li>
+            One too little or one too many closing parentheses
+          </li>
+          <br>
+          <div class="a">print(9, not (a==7 and b==6)</div>
+      </h2>
         </p>
 
 

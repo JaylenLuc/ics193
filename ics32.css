@@ -37,6 +37,44 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
 }
+div {
+  background-color: lightgrey;
+  width: 280px;
+  height: 25px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+}
+div.a {
+  background-color: lightgrey;
+  width: 280px;
+  height: 25px;
+  border: 15px solid lightgreen;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+  color:green;
+  border-right: 3px solid #000;
+  animation: cursor2 1s infinite step-end, typing2 15s infinite steps(17);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor2{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing2{
+  0%{ width: 0ch} /*Text is hidden*/
+  9%{ width: 12ch;} /*The enitre header will be typed out*/
+  17%{ width: 21ch;} /*Text stays visible*/
+  100%{ width: 21ch;} /*Text stays hidden*/
+}
 @keyframes cursor1{
   0%, 100%{border-color: transparent;}
   50%{border-color: #000;}

@@ -5,14 +5,7 @@ body {
   font-family: "Courier Prime", monospace;
   background-color: #f7f7f7;
 }
-header {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  
-  margin: 0;
-}
+
 
 h1 {
   font-size: 30px;
@@ -22,6 +15,9 @@ h1 {
   animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
+  position:relative;
+  left: 35%;
+ 
 }
 h2 {
 font-size: 15px;
@@ -36,6 +32,8 @@ h3 {
   animation: cursor1 1s infinite step-end, typing1 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
+  position:relative;
+  left: 40%;
 }
 div {
   background-color: lightgrey;
@@ -63,6 +61,8 @@ h4 {
   animation: cursor2 1s infinite step-end, typing2 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
+  position:relative;
+  left: 40%;
 }
 @keyframes cursor2{
   0%, 100%{border-color: transparent;}

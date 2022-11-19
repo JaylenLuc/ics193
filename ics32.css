@@ -32,7 +32,7 @@ h3 {
   animation: cursor1 1s infinite step-end, typing1 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
-  position:relative;
+  position: relative;
   left: 40%;
 }
 div {

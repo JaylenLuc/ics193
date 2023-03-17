@@ -15,18 +15,18 @@
         <a href="#errors" class="w3-bar-item w3-button">Common Errors</a>
         </li>
         <li>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#classes" class="w3-bar-item w3-button">Polymorphism</a>
         </li>
       </div1>
       
-       <h1>ICS31.get_Resources_and_Advice()</h1>
+       <h1>ICS32.get_Resources_and_Advice()</h1>
         <br><br>
     <h2>Bjarne Stroustrup, most notable for the invention and development of the C++ programming language, posited<br>
        “there are only two kinds of languages: 
       the ones people complain about and the ones nobody uses.”</h2>
     <p style="text-align:center">
     
-        <a id="links"><h3>ICS31.online_help()</h3></a>
+        <a id="links"><h3>ICS32.online_help()</h3></a>
  
       <p style="text-align:center">
       <img src="https://content.presspage.com/uploads/2658/c800_logo-stackoverflow-square.jpg?98978" alt="stackoverflow"
@@ -58,7 +58,10 @@
         <br>
         <a href = "https://docs.python.org/3/library/index.html">Offical python documentation</a>
         <h2>If you want to get a more rigoruous and comprehensive detail into a specific function or concept in <br>
-          Python, the official documentation is the place to go.  </h2>
+          Python, the official documentation is the place to go. Remember pathlib? Its important to read what functions do
+          what and get an understanding of what functions do what you want to achieve. This is especially important because in ICS32 you 
+        are working with python documentation and libraries probobly for the very first time so reading documentation in general 
+        is important. Other third party libraries such as Tkinter, PyNaCl also will require you to read documentation </h2>
         </p>
     </p>
     <p style="text-align:center">
@@ -74,7 +77,7 @@
         <br>
         <br>
        
-          <a id="errors"><h4>ICS31.common_errors()</h4></a>
+          <a id="errors"><h4>ICS32.common_errors()</h4></a>
 
 
         <p style="text-align:center"><div>“SyntaxError: Unexpected EOF While Parsing”</div></p>
@@ -130,6 +133,80 @@
         printMsg()</div></h2>
       </h2>
         </p>
+
+    <a id="classes"><h5>ICS32.what_about_classes()</h5></a>
+
+       <br> 
+        <h2>Abstract methods and classes: A class is abstract when it contains one or more abstract methods<br>
+          It is defined by having the tag "@abstractmethod"
+        <br>
+        <p style="text-align:center"><div class="c">
+          class Shape(ABC):<br>
+          <p class = "indent">
+            def __init__(self, name):<br>
+            <p class = "indentmore">self.shape_name = name</p></p>
+            <p class = "indent">
+            @abstractmethod<br>
+            <p class = "indent">
+            def draw(self):
+                pass</p></p></p>
+        </div>
+        Abstract classes contain abstract methods which are blueprints for the child classes to implement<br>
+        These classes are solely meant to be inherited from and cannot be used on its own
+        <br>
+          <li>
+          Here is an example of how to inherit and overriding the abstract methods:
+          <br>
+          <br>
+          <div class="c">
+            
+            class Circle(Shape):<br>
+            <p class = "indent">
+            def __init__(self):<br>
+            <p class = "indent">
+              <p class = "indentmore">super().__init__("circle")<br></p>
+            </p>
+            <p class = "indent">def draw(self):<br></p>
+            <p class = "indentmore"> print("Drawing a Circle")</p>
+            </div>
+          <br>
+          </li>
+          <li>
+            notice that when we call circle's draw() method, its behavior is polymorphic
+            <br>
+            <br>
+  
+            <div class="b">
+              <p class = "indent">circle = Circle()</p>
+              <p class = "indent">circle.draw()</p>
+              OUTPUT:
+              Drawing a Circle
+              </div>
+              <br>
+          </li>
+          <li>
+            you can then horizontally inherit from shape again for another shape of your choice
+          </li>
+          <br>
+          <div class="d">
+            class myriagon(Shape):<br>
+          <p class = "indent">
+            def __init__(self, name):<br>
+            <p class = "indentmore">self.shape_name = name</p></p>
+            <p class = "indent">
+            @abstractmethod<br>
+            <p class = "indent">
+            def draw(self):
+            <p class = "indentmore">print("Drawing a myriagon")</p></p></p>
+            
+           </div>
+          <br>
+          <br>
+          <br>
+          <div>OUTPUT: Drawing a myriagon</div>
+          <h2></h2>
+      
+
         
 
 

@@ -3,14 +3,14 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Courier Prime", monospace;
-  background-color: #f7f7f7;
+  background-color: #D3D3D3;
 }
 
 
 h1 {
   font-size: 30px;
   font-weight: 500;
-  color:green;
+  color:#A020F0;
   border-right: 3px solid #000;
   animation: cursor 1s infinite step-end, typing 15s infinite steps(17);
   white-space: nowrap;
@@ -28,7 +28,7 @@ text-align: center;
 h3 {
   font-size: 25px;
   font-weight: 500;
-  color:green;
+  color:#A020F0;
   border-right: 3px solid #000;
   animation: cursor1 1s infinite step-end, typing1 15s infinite steps(17);
   white-space: nowrap;
@@ -40,7 +40,7 @@ div {
   background-color: lightgrey;
   width: 280px;
   height: 25px;
-  border: 15px solid green;
+  border: 15px solid #F2A2E8;
   padding: 50px;
   margin: auto;
   text-align: left;
@@ -49,11 +49,14 @@ div {
 p.indent {
   text-indent: 30px;
 }
+p.indentmore {
+  text-indent: 60px;
+}
 div.a {
   background-color: lightgrey;
   width: 280px;
   height: 25px;
-  border: 15px solid lightgreen;
+  border: 15px solid #F2A2E8;
   padding: 50px;
   margin: auto;
   text-align: left;
@@ -62,7 +65,25 @@ div.b {
   background-color: lightgrey;
   width: 280px;
   height: 120px;
-  border: 15px solid lightgreen;
+  border: 15px solid #F2A2E8;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+}
+div.c {
+  background-color: lightgrey;
+  width: 350px;
+  height: 100px;
+  border: 15px solid #F2A2E8;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+}
+div.d{
+  background-color: lightgrey;
+  width: 350px;
+  height: 150px;
+  border: 15px solid #F2A2E8;
   padding: 50px;
   margin: auto;
   text-align: left;
@@ -70,9 +91,21 @@ div.b {
 h4 {
   font-size: 25px;
   font-weight: 500;
-  color:green;
+  color:#A020F0;
   border-right: 3px solid #000;
   animation: cursor2 1s infinite step-end, typing2 15s infinite steps(17);
+  white-space: nowrap;
+  overflow: hidden;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+h5 {
+  font-size: 25px;
+  font-weight: 500;
+  color:#A020F0;
+  border-right: 3px solid #000;
+  animation: cursor2 1s infinite step-end, typing4 15s infinite steps(17);
   white-space: nowrap;
   overflow: hidden;
 
@@ -89,6 +122,12 @@ h4 {
   9%{ width: 12ch;} /*The enitre header will be typed out*/
   17%{ width: 21ch;} /*Text stays visible*/
   100%{ width: 21ch;} /*Text stays hidden*/
+}
+@keyframes typing4{
+  0%{ width: 0ch} /*Text is hidden*/
+  9%{ width: 12ch;} /*The enitre header will be typed out*/
+  17%{ width: 26ch;} /*Text stays visible*/
+  100%{ width: 26ch;} /*Text stays hidden*/
 }
 @keyframes cursor1{
   0%, 100%{border-color: transparent;}
@@ -117,7 +156,7 @@ h4 {
   position: fixed;
   width: 200px;
   height: 150px;
-  background: rgb(79, 180, 79);
+  background: rgb(195, 177, 225);
   margin: 10px;
 }
 .w3-button{
